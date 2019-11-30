@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: Hexo documentation
+subtitle: Hexo documentation article
+description: Hexo documentation article
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: badongdyc
+language: zh-cn
+timezone: GMT
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: https://badongdyc.github.io/hexo-doc
+root: /hexo-doc/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -95,4 +95,7 @@ theme: docs
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/badongdyc/hexo-doc
+  branch: gh-pages
+  message: "Docs updated: {{ now('YYYY-MM-DD HH:mm:ss') }})"
